@@ -1,9 +1,11 @@
-<div class="text-center">
-    <h3 class="text-light bg-primary">No of Products Added to Cart: {{productCount}}</h3>
-    <span *ngFor="let title of  productsSentByChild" class="text-white bg-primary fw-bolder">{{title}},</span>
-</div>
+
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-2 mb-5">
     <div class="col" *ngFor="let prObj of products">
         <app-product-details [productObj]=prObj (myEvent)="getProductDetailsFromChild($event)"></app-product-details>
     </div>
 </div> 
+
+<div class="text-center">
+    <h3 class="text-light bg-primary">No of Products Added to Cart: {{productCount}}</h3>
+    <span *ngFor="let title of  productsSentByChild" class="text-white bg-primary fw-bolder">{{title}},</span>
+</div>
