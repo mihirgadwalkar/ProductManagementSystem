@@ -6,7 +6,17 @@ import { Product } from '../models/prodcut.model';
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
-export class ProductDetailsComponent {
-  
+export class ProductDetailsComponent  {
+
+  //to receive data from parent as input
+  @Input() productObj:Product;
+  //create a custom event
+  @Output() myEvent=new EventEmitter();
+
+  sendProductDetailsToParent(productTitle){
+    //emit data to parent
+    this.myEvent.emit(productTitle);
+  }
+
 
 }
