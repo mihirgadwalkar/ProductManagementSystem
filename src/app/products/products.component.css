@@ -1,0 +1,10 @@
+li{
+    background-color: orangered;
+}
+a{
+    color: whitesmoke;
+    font-weight: bolder;
+}
+a:focus{
+    background-color: coral;
+}
