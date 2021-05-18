@@ -1,7 +1,10 @@
+<!-- heading -->
 <h1 class="display-3 text-center bg-warning text-dark m-4 p-3 fw-bolder fst-italic">Latest SmartPhones</h1>
+<!-- horizontal line -->
 <hr class="bg-white border-2 border-top border-white">
+<!-- main content of cards -->
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-2 mb-5">
-    <div class="col" *ngFor="let mobileObj of mobiles">
-        <app-product-details [productObj]=mobileObj></app-product-details>
+    <div class="col" *ngFor="let mobileObj of mobiles" >
+        <app-product-details [productObj]=mobileObj ></app-product-details>
     </div>
 </div> 
