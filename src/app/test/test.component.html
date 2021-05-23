@@ -3,16 +3,18 @@
     <thead>
         <tr>
             <th>ID</th>
-            <th>Email</th>
-            <th>Profile Pic</th>
+            <!-- <th>Email</th>
+            <th>Profile Pic</th> -->
         </tr>
     </thead>
 
     <tbody>
-        <tr *ngFor="let postObj of users.data">
-            <td>{{postObj.id}}</td>
-            <td>{{postObj.email}}</td>
-            <td><img src={{postObj.avatar}} alt="..."></td>
+        <tr *ngFor="let postObj of users">
+            <td>
+                <button class="btn btn-md bg-white" (click)="onSelectID(postObj.id)">{{postObj.id}}</button>
+            </td>
+            <!-- <td>{{postObj.email}}</td>
+            <td><img src={{postObj.avatar}} alt="..."></td> -->
         </tr>
     </tbody>
 </table>

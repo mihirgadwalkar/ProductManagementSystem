@@ -12,6 +12,6 @@ export class TelevisionsService {
     constructor(private hc:HttpClient) { }
 
     getTelevisionsData():Observable<Product[]>{
-      return this.hc.get<Product[]>("assets/televisions.json")
+      return this.hc.get<Product[]>("http://localhost:3000/televisions")
     } 
 }

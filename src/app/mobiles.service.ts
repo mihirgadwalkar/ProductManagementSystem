@@ -13,6 +13,6 @@ export class MobilesService {
     constructor(private hc:HttpClient) { }
 
     getMobilesData():Observable<Product[]>{
-      return this.hc.get<Product[]>("assets/mobiles.json")
+      return this.hc.get<Product[]>("http://localhost:3000/mobiles")
     } 
 }

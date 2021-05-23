@@ -10,6 +10,7 @@ import { BikesComponent } from './bikes/bikes.component';
 import { TelevisionsComponent } from './televisions/televisions.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component'
 import { TestComponent } from './test/test.component';
+import { UserdetailsComponent } from './userdetails/userdetails.component';
 const routes: Routes = [
   { path:'home',component:HomeComponent},
   { path:'register',component:RegisterComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
     {path:'', redirectTo:'/products/mobiles',pathMatch:'full'}
   ]},
   { path:'test',component:TestComponent},
+  { path:'test/:id',component:UserdetailsComponent},
   { path:'', redirectTo:'/home',pathMatch:'full'},
   { path:'**',component:PagenotfoundComponent}
 ];
