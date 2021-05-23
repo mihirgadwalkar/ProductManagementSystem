@@ -17,9 +17,7 @@ export class MobilesComponent implements OnInit {
  }
 
  ngOnInit():void{
-   //obj initialisation logic
-   //this.mobiles=this.mobObj.getMobilesData()
-   
+  
    this.mobObj.getMobilesData().subscribe(
      data=>{
        this.mobiles=data
@@ -28,7 +26,7 @@ export class MobilesComponent implements OnInit {
      err=>{
        console.log("err is ",err )
      }
-   )
+   ) 
  }
 
 }

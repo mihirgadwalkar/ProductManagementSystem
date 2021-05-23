@@ -16,8 +16,6 @@ export class TelevisionsComponent implements OnInit{
   }
   
   ngOnInit():void{
-    //obj initialisation
-    //this.televisions=this.tvObj.getTelevisionsData()
 
     this.tvObj.getTelevisionsData().subscribe(
       data=>{

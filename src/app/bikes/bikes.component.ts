@@ -16,8 +16,6 @@ export class BikesComponent implements OnInit {
   }
   
   ngOnInit():void{
-    //obj initialisation
-    //this.bikes=this.bikeObj.getBikesData()
 
     this.bikeObj.getBikesData().subscribe(
       data=>{
@@ -27,6 +25,6 @@ export class BikesComponent implements OnInit {
       err=>{
         console.log("err is ",err )
       }
-    )
+    ) 
   }
 }
