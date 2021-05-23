@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Product } from './models/prodcut.model';
 
 @Injectable({
@@ -6,7 +8,7 @@ import { Product } from './models/prodcut.model';
 })
 export class BikesService {
 
-  bikes:Product[]=[
+  /* bikes:Product[]=[
 
     {
     productTitle:"Bajaj Pulsar NS125",
@@ -58,5 +60,12 @@ export class BikesService {
 
     getBikesData():Product[]{
       return this.bikes
+    } */
+
+    //inject HttpCLient service object
+    constructor(private hc:HttpClient) { }
+
+    getBikesData():Observable<Product[]>{
+      return this.hc.get<Product[]>("assets/bikes.json")
     }
 }

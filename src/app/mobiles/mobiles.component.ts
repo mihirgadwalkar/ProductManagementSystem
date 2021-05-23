@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
 import { MobilesService } from '../mobiles.service';
 import { Product } from '../models/prodcut.model';
 
@@ -17,7 +18,17 @@ export class MobilesComponent implements OnInit {
 
  ngOnInit():void{
    //obj initialisation logic
-   this.mobiles=this.mobObj.getMobilesData()
+   //this.mobiles=this.mobObj.getMobilesData()
+   
+   this.mobObj.getMobilesData().subscribe(
+     data=>{
+       this.mobiles=data
+     },
+
+     err=>{
+       console.log("err is ",err )
+     }
+   )
  }
 
 }

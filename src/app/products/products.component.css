@@ -1,10 +1,16 @@
 li{
     background-color: orangered;
+    border-radius: 5px;
 }
 li a{
     color: whitesmoke;
     font-weight: bolder;
 }
-active{
+.active{
     background-color: coral;
+}
+.active.nav-link{
+    background-color:white;
+    color:orangered;
+    box-shadow: 3px 3px 3px orangered;
 }
