@@ -7,7 +7,7 @@ import { Product } from './models/prodcut.model';
 export class DataService {
 
   constructor() { }
-  /* private  mobiles:Product[]=[
+  private  mobiles:Product[]=[
 
     {
     productTitle:"Apple iPhone 12",
@@ -59,5 +59,113 @@ export class DataService {
 
     getMobilesData():Product[]{
       return this.mobiles
-    } */
+    }
+
+    bikes:Product[]=[
+
+      {
+      productTitle:"Bajaj Pulsar NS125",
+      description: "Displacement - 124.45 cc, Mileage - 48 kmpl(Owner Reported), Transmission - 5 Speed Manual, Kerb Weight - 144 kg",
+      productImage:"https://www.wheelsupdates.com/wp-content/uploads/2021/04/Bajaj-Pulsar-NS125-price-and-specs.jpg"
+      },
+      {
+      productTitle:"Joy e-bike Monster",
+      description: "Riding Range - 75 Km, Battery Charging Time - 4-4.5 Hrs, Rated Power - 250 W, Seat Height - 780 mm",
+      productImage:"https://bd.gaadicdn.com/processedimages/joye-bike/beast/640X309/beast607ea27e93cd7.jpg?tr=w-300"
+      },
+  
+      {
+      productTitle:"Aprilia SR 125",
+      description: "Displacement - 124.45 cc, Mileage - 40 kmpl(Owner Reported), Kerb Weight - 115 kg, Seat Height - 780 mm",
+      productImage:"https://imgd.aeplcdn.com//642x361//bw/ec/33108/Aprilia-SR125-First-Ride-Review-118836.jpg?wm=2"
+      },
+  
+      {
+      productTitle:"Suzuki Burgman Street 125",
+      description: "Displacement - 124 cc, Mileage - 47 kmpl(Owner Reported), Kerb Weight - 110 kg, Seat Height - 780 mm",
+      productImage:"https://imgd.aeplcdn.com//642x361//bw/ec/35607/Suzuki-Burgman-Street-125-Action-133119.jpg?wm=2"
+      },
+  
+      {
+      productTitle:"Royal Enfield Himalayan",
+      description: "Displacement - 411 cc, Mileage - 30 kmpl(Owner Reported), Transmission - 5 Speed Manual, Kerb Weight - 199 kg",
+      productImage:"https://imgd.aeplcdn.com/1280x720/n/cw/ec/49739/himalayan-right-front-three-quarter.jpeg?q=80"
+      },
+  
+      {
+      productTitle:"KTM 200 Duke",
+      description: "Displacement - 199.5 cc, Mileage - 33 kmpl(Owner Reported), Transmission - 6 Speed Manual, Kerb Weight - 159 kg",
+      productImage:"https://imgd.aeplcdn.com/1280x720/n/cw/ec/49496/duke-200-right-front-three-quarter.jpeg?q=80"
+      },
+  
+      {
+      productTitle:"Yamaha YZF R15 V3",
+      description: "Displacement - 155 cc, Mileage - 43 kmpl(Owner Reported), Transmission - 6 Speed Manual, Kerb Weight - 142 kg",
+      productImage:"https://imgd.aeplcdn.com//642x361//bw/ec/34973/Yamaha-YZF-R15-V3-Front-threequarter-130087.jpg?wm=2"
+      },
+    
+      {
+      productTitle:"Bajaj Pulsar RS 200",
+      description: "Displacement - 199.5 cc, Mileage - 35 kmpl(Owner Reported), Transmission - 6 Speed Manual, Kerb Weight - 166 kg",
+      productImage:"https://imgd.aeplcdn.com/1280x720/bikewaleimg/ec/18342/img/l/Bajaj-Pulsar-RS200-Road-Test-50397.jpg?v=201711021421&q=80"
+      }
+      ];
+
+      getBikesData():Product[]{
+        return this.bikes
+      }
+
+      televisions:Product[]=[
+
+        {
+        productTitle:"Samsung The Frame",
+        description: "Resolution: 55-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Refresh Rate: 120 Hz, Operating System: Tizen, Storage: 8 GB, Sound Output: 40 W, Color: Black",
+        productImage:"https://techunfolded.com/wp-content/uploads/2020/10/Samsung-The-Frame-Smart-TV.png"
+        },
+        {
+        productTitle:"OnePlus Q1 Series",
+        description: "Resolution: 55-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Motion Rate: 480 Hz, Operating System: Android, Storage: 16 GB, Sound Output: 50 W, Color: Black",
+        productImage:"https://techunfolded.com/wp-content/uploads/2020/10/OnePlus-Q1-Series-QLED-TV.png"
+        },
+    
+        {
+        productTitle:"SONY Bravia",
+        description: "Resolution: 55-inch Ultra HD 4k TV, Supported Apps: Netflix, Amazon Prime, Hotstar,  Refresh Rate: 50 Hz, Operating System: Android, Storage: 16 GB, Sound Output: 20 W, Color: Black",
+        productImage:"https://techunfolded.com/wp-content/uploads/2021/04/SONY-Bravia-Ultra-HD-4K-Android-TV.png"
+        },
+    
+        {
+        productTitle:"Samsung QA55Q60TAKXXL",
+        description: "Resolution: 55-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Refresh Rate: 60 Hz, Operating System: Tizen, Storage: 8 GB, Sound Output: 20 W, Color: Black",
+        productImage:"https://techunfolded.com/wp-content/uploads/2021/04/Samsung-4K-QLED-TV-2020.png"
+        },
+    
+        {
+        productTitle:"LG 65UM7290PTD",
+        description: "Resolution: 65-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Refresh Rate: 50 Hz, Operating System: Web OS, Storage: 1.5 GB, Sound Output: 20 W, Color: Black",
+        productImage:"https://techunfolded.com/wp-content/uploads/2020/10/LG-4K-Smart-LED-TV.png"
+        },
+    
+        {
+        productTitle:"Samsung The Serif Series",
+        description: "Resolution: 49-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Refresh Rate: 60 Hz, Operating System: Tizen, Storage: 16 GB, Sound Output: 40 W, Color: White",
+        productImage:"https://techunfolded.com/wp-content/uploads/2020/10/Samsung-The-Serif-Series-4K-Smart-TV.png"
+        },
+    
+        {
+        productTitle:"Compaq HEX",
+        description: "Resolution: 55-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Refresh Rate: 60 Hz, Operating System: Android, Storage: 16 GB, Sound Output: 24 W, Color: Silver",
+        productImage:"https://techunfolded.com/wp-content/uploads/2021/04/Compaq-4K-Smart-QLED-TV.png"
+        },
+      
+        {
+        productTitle:"iFFALCON by TCL",
+        description: "Resolution: 55-inch Ultra HD 4k QLED, Supported Apps: Netflix, Amazon Prime, Hotstar, Refresh Rate: 60 Hz, Operating System: Android, Storage: 16 GB, Sound Output: 30 W, Color: Black",
+        productImage:"https://techunfolded.com/wp-content/uploads/2020/10/iFFALCON-by-TCL-4K-QLED-TV.png"
+        }
+        ];
+
+        getTelevisionsData():Product[]{
+          return this.televisions
+        }
 }
