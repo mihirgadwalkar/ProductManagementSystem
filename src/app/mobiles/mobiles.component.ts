@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
+import { MobilesService } from '../mobiles.service';
 import { Product } from '../models/prodcut.model';
 
 @Component({
@@ -12,12 +12,12 @@ export class MobilesComponent implements OnInit {
   mobiles:Product[]=[]
 
   //inject obj od DataService class
- constructor(private dsObj:DataService){
+ constructor(private mobObj:MobilesService){
  }
 
  ngOnInit():void{
    //obj initialisation logic
-   this.mobiles=this.dsObj.getMobilesData()
+   this.mobiles=this.mobObj.getMobilesData()
  }
 
 }

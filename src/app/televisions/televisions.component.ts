@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from '../data.service';
 import { Product } from '../models/prodcut.model';
+import { TelevisionsService } from '../televisions.service';
 
 @Component({
   selector: 'app-televisions',
@@ -12,12 +12,12 @@ export class TelevisionsComponent implements OnInit{
   televisions:Product[]=[]
   
   //injecting obj of DataService class
-  constructor(private dsObj:DataService){
+  constructor(private tvObj:TelevisionsService){
   }
   
   ngOnInit():void{
     //obj initialisation
-    this.televisions=this.dsObj.getTelevisionsData()
+    this.televisions=this.tvObj.getTelevisionsData()
   }
 
 }
