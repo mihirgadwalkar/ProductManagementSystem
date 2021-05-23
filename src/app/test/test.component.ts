@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component,OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
 import { FakedataService } from '../fakedata.service';
 import { Post } from '../models/post.model';
 
@@ -7,23 +8,29 @@ import { Post } from '../models/post.model';
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css']
 })
-export class TestComponent implements OnInit {
+export class TestComponent implements OnInit,OnDestroy {
 
+  mySubscription:Subscription;
   myPosts:Post[]=[]
   users;
+
   //inject fakedata service data
   constructor(private fsObj:FakedataService) { }
 
   ngOnInit(): void {
-    this.fsObj.getUsers().subscribe(
+    this.mySubscription=this.fsObj.getUsers().subscribe(
       userData=>{
         //assign posts
         this.users=userData
       },
       err=>{
-        console.log("err in getting posts data",err)
+        console.log("err in getting users data",err)
       }
     )
+  }
+
+  ngOnDestroy(){
+    this.mySubscription.unsubscribe();
   }
 
 }
